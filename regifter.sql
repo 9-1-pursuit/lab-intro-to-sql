@@ -31,7 +31,7 @@ ALTER TABLE gifts RENAME value TO price;
 -- 
 \echo Insert a peach candle, given by 'Santa' thats value is 9 and has been previously regifted
 -- 
-INSERT INTO gifts(gift TEXT, price, value INT)
+INSERT INTO gifts(gift, price, price)
 VALUES(`peach candle`, `Santa`, 9, previously_regifted);
 
 --
@@ -43,7 +43,7 @@ SELECT * FROM gifts;
 \echo Uncomment below to insert 5 more gifts
 -- 
 
-INSERT INTO gifts (gift, giver, value, previously_regifted)
+INSERT INTO gifts (gift, giver, price, previously_regifted)
  VALUES
   ('peach candle', 'Santa', 9, TRUE),
   ('cinnamon candle', 'Nick', 19, TRUE),
