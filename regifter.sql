@@ -55,11 +55,11 @@ VALUES
 --
 INSERT INTO gifts (gift, giver, value, previously_regifted)
 VALUES
-('lavender candle', 'Smita', '9', FALSE),
-('cologne', 'Pradeep', '30', TRUE),
-('jacket', 'Neil', '50', FALSE),
-('shoes', 'Mishka', '99', TRUE),
-('chocolate', 'Arisha', '10', FALSE)
+('lavender candle', 'Smita', 9, FALSE),
+('cologne', 'Pradeep', 30, TRUE),
+('jacket', 'Neil', 50, FALSE),
+('shoes', 'Mishka', 99, TRUE),
+('chocolate', 'Arisha', 10, FALSE)
 ;
 
 
@@ -81,7 +81,7 @@ SELECT * FROM gifts WHERE giver = 'Santa' OR value > 30;
 --
 \echo Query for every gift whose giver is NOT Santa
 --
-SELECT * FROM gifts WHERE giver != 'Santa';
+SELECT gift FROM gifts WHERE giver != 'Santa';
 
 --
 \echo Update the second gift to have a value of 2999
