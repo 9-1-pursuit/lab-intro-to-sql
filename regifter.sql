@@ -22,6 +22,9 @@ CREATE TABLE gifts (id serial, gift TEXT, giver VARCHAR(30), value INT, previous
 -- 
 \dt;
 
+-- this was the correct command
+\d gifts;
+
 -- 
 \echo Alter the table so that the column price is changed to value 
 -- 
