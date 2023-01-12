@@ -23,7 +23,7 @@ CREATE TABLE gifts (id serial, gift TEXT, giver VARCHAR(30), value INT, previous
 \echo See details of the table you created
 -- 
 
-SELECT * from gifts;
+\d gifts;
 
 -- 
 \echo Alter the table so that the column price is changed to value 
@@ -36,9 +36,15 @@ SELECT * from gifts;
 \echo Insert a peach candle, given by 'Santa' thats value is 9 and has been previously regifted
 -- 
 INSERT INTO 
-gifts (gift, giver, price, previously_regifted)
+gifts (gift, 
+giver,
+price,
+previously_regifted)
 VALUES 
-('peach candle', 'Santa', 9 , true);
+('peach candle',
+'Santa',
+9,
+true);
 
 SELECT * from gifts;
 
@@ -55,10 +61,10 @@ SELECT * from gifts;
 INSERT INTO gifts (gift, giver, value, previously_regifted)
 VALUES
 
-('cinnamon candle', 'Nick', '19', TRUE),
-('soap on a rope', 'Rudolf', '29', FALSE),
-('potpurri', 'Elf on the Shelf', '39', TRUE),
-('mango candle', 'The Boss', '49', FALSE)
+('cinnamon candle', 'Nick', 19, TRUE),
+('soap on a rope', 'Rudolf', 29, FALSE),
+('potpurri', 'Elf on the Shelf', 39, TRUE),
+('mango candle', 'The Boss', 49, FALSE)
 ;
 
 SELECT * from gifts;
@@ -69,11 +75,11 @@ SELECT * from gifts;
 
 INSERT INTO gifts (gift, giver, price, previously_regifted)
 VALUES
-('melon candle', 'suzy', '12', FALSE),
-('cinnamon candle', 'Nick', '19', TRUE),
-('soap on a rope', 'Rudolf', '29', FALSE),
-('potpurri', 'Elf on the Shelf', '39', TRUE),
-('mango candle', 'The Boss', '49', FALSE)
+('melon candle', 'suzy', 12, FALSE),
+('cinnamon candle', 'Nick', 19, TRUE),
+('soap on a rope', 'Rudolf', 29, FALSE),
+('potpurri', 'Elf on the Shelf', 39, TRUE),
+('mango candle', 'The Boss', 49, FALSE)
 ;
 
 SELECT * from gifts;
@@ -119,7 +125,7 @@ SELECT * FROM gifts WHERE price = 2999 OR id =2;
 \echo Delete all the gifts from Santa and return the 'value' and 'gift' of the gift you have deleted
 --
 
-DELETE FROM gifts WHERE giver = 'Santa' RETURNING (gift, price);
+DELETE FROM gifts WHERE giver = 'Santa' RETURNING gift, price;
 
 --
 \echo Query for all the columns in your gifts table one more time
