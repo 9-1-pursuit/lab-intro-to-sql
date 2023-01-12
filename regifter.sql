@@ -110,7 +110,7 @@ DELETE FROM gifts WHERE giver = 'Santa' RETURNING (price , gift);
 --
  \echo Count the total number of gifts that have the word candle in it
 -- 
-SELECT count(price) FROM gifts;
+SELECT Count(price) FROM gifts;
 
 --
 \echo Get the AVEREAGE value from all the gifts
