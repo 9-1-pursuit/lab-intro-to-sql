@@ -83,7 +83,7 @@ SELECT * FROM gifts WHERE giver = 'Santa' OR price > 30;
 \echo Query for every gift whose giver is NOT Santa
 --
 
-SELECT * FROM gift WHERE giver != 'Santa';
+SELECT * FROM gifts WHERE giver != 'Santa';
 --
 \echo Update the second gift to have a value of 2999
 -- 
