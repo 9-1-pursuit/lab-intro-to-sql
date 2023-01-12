@@ -31,7 +31,7 @@ ALTER TABLE gifts RENAME value TO price;
 -- 
 \echo Insert a peach candle, given by 'Santa' thats value is 9 and has been previously regifted
 -- 
-INSERT INTO gifts(gift TEXT, giver VARCHAR(30), value INT)
+INSERT INTO gifts(gift TEXT, price, value INT)
 VALUES(`peach candle`, `Santa`, 9, previously_regifted);
 
 --
