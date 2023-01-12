@@ -21,9 +21,9 @@ CREATE TABLE gifts( id serial, gift TEXT, giver VARCHAR(30), value INT, previous
 -- 
 \echo See details of the table you created
 -- 
- SELECT * FROM gifts;
+--  SELECT * FROM gifts;
 --  \dt;
---  \d gifts;
+ \d gifts;
 
 -- 
 \echo Alter the table so that the column value is changed to price 
@@ -46,11 +46,11 @@ SELECT * FROM gifts;
 
 INSERT INTO gifts (gift, giver, price, previously_regifted)
 VALUES
-('peach candle', 'Santa', '9', TRUE),
-('cinnamon candle', 'Nick', '19', TRUE),
-('soap on a rope', 'Rudolf', '29', FALSE),
-('potpurri', 'Elf on the Shelf', '39', TRUE),
-('mango candle', 'The Boss', '49', FALSE)
+('peach candle', 'Santa', 9, TRUE),
+('cinnamon candle', 'Nick', 19, TRUE),
+('soap on a rope', 'Rudolf', 29, FALSE),
+('potpurri', 'Elf on the Shelf', 39, TRUE),
+('mango candle', 'The Boss', 49, FALSE)
 ;
 
 -- 
@@ -59,11 +59,11 @@ VALUES
 
 INSERT INTO gifts (gift, giver, price, previously_regifted)
 VALUES
-('strawberry candle', 'Salina', '10', TRUE),
-('robe', 'Rick', '20', TRUE),
-('bath bombs', 'Ruby', '30', FALSE),
-('artpad', 'Elf on the Shelf', '40', TRUE),
-('necklace', 'Mary', '50', FALSE)
+('strawberry candle', 'Salina', 10, TRUE),
+('robe', 'Rick', 20, TRUE),
+('bath bombs', 'Ruby', 30, FALSE),
+('artpad', 'Elf on the Shelf', 40, TRUE),
+('necklace', 'Mary', 50, FALSE)
 ;
 
 --
