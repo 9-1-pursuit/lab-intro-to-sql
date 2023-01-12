@@ -20,7 +20,7 @@ CREATE TABLE gifts (id serial, gift TEXT, giver VARCHAR(30), value INT, previous
 -- 
 \echo See details of the table you created
 -- 
-SELECT * FROM gifts;
+\dt;
 
 -- 
 \echo Alter the table so that the column price is changed to value 
@@ -107,7 +107,7 @@ SELECT * FROM gifts;
 --
  \echo Count the total number of gifts that have the word candle in it
 -- 
-SELECT COUNT(*) FROM gifts WHERE gift LIKE '%candle%';
+SELECT COUNT(gift) FROM gifts WHERE gift LIKE '%candle%';
 
 --
 \echo Get the AVEREAGE value from all the gifts
