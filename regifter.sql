@@ -76,7 +76,7 @@ SELECT gift FROM gifts WHERE  gift LIKE '%candle';
 --
 \echo Query for every gift whose giver is Santa OR value is greater than 30
 --
-SELECT * FROM gifts WHERE giver = 'Santa' OR price is >= 30;
+SELECT * FROM gifts WHERE giver = 'Santa' OR price > 30;
 
 --
 \echo Query for every gift whose giver is NOT Santa
