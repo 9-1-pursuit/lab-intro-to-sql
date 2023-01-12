@@ -55,7 +55,7 @@ INSERT INTO gifts (gift, giver, price, previously_regifted)
 \echo Insert 5 more gifts of your own choosing,  include 1 more candle
 --
 
-INSERT TO gifts (gift, giver, price, previously_regifted)
+INSERT INTO gifts (gift, giver, price, previously_regifted)
 VALUES
   ('playstation 5', 'Santa', '39', TRUE),
   ('watch', 'Michele', '29', FALSE),
