@@ -31,8 +31,8 @@ ALTER TABLE gifts RENAME value TO price;
 -- 
 \echo Insert a peach candle, given by 'Santa' thats value is 9 and has been previously regifted
 -- 
-INSERT INTO gifts(gift, price, price)
-VALUES('peach candle', 'Santa', 9, previously_regifted);
+INSERT INTO gifts(gift, giver, price, previously_regifted )
+VALUES('a peach candle', 'Santa', 9, TRUE);
 
 --
 \echo Query for all the columns in your gifts table
