@@ -110,7 +110,7 @@ SELECT * FROM gifts;
 --
  \echo Count the total number of gifts that have the word candle in it
 -- 
-SELECT (*)COUNT FROM gifts WHERE LIKE '%candle%';
+SELECT (*)COUNT FROM gifts WHERE gift LIKE '%candle%';
 
 --
 \echo Get the AVEREAGE value from all the gifts
