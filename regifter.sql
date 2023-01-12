@@ -57,11 +57,12 @@ INSERT INTO gifts (gift, giver, price, previously_regifted)
 
 INSERT INTO gifts (gift, giver, price, previously_regifted)
 VALUES
-  ('playstation 5', 'Santa', '39', TRUE),
-  ('watch', 'Michele', '29', FALSE),
-  ('vanilla candle', 'Phenicia', '34', FALSE),
-  ('Nike', 'Shaldar', '32', TRUE),
-  ('timberlands', 'Flinnetta', '39', FALSE);
+  ('playstation 5', 'Santa', 39, TRUE),
+  ('watch', 'Michele', 29, FALSE),
+  ('candle', 'Phenicia', 34, FALSE),
+  ('Nike', 'Shaldar', 32, TRUE),
+  ('timberlands', 'Flinnetta', 39, FALSE)
+  ('rashberry pi', 'Zoe', 12, TRUE);
 
 --
 \echo Query for gifts with a price greater than or equal to 20
@@ -82,7 +83,7 @@ SELECT * FROM gifts WHERE giver = 'Santa' OR price > 30;
 \echo Query for every gift whose giver is NOT Santa
 --
 
-SELECT * FROM gift WHERE giver is != 'Santa';
+SELECT * FROM gift WHERE giver != 'Santa';
 --
 \echo Update the second gift to have a value of 2999
 -- 
