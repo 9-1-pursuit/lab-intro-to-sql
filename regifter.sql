@@ -32,7 +32,7 @@ ALTER TABLE gifts RENAME value TO price;
 \echo Insert a peach candle, given by 'Santa' thats value is 9 and has been previously regifted
 -- 
 INSERT INTO gifts(gift, price, price)
-VALUES(`peach candle`, `Santa`, 9, previously_regifted);
+VALUES('peach candle', 'Santa', 9, previously_regifted);
 
 --
 \echo Query for all the columns in your gifts table
@@ -71,18 +71,18 @@ SELECT * FROM gifts WHERE price >= 20;
 --
 \echo Query for every gift that has the word candle in it, only show the gift column
 --
-SELECT gift FROM gifts WHERE  gift LIKE `%candle`;
+SELECT gift FROM gifts WHERE  gift LIKE '%candle';
 
 --
 \echo Query for every gift whose giver is Santa OR value is greater than 30
 --
-SELECT * FROM gifts WHERE giver = `Santa` OR price is > 30;
+SELECT * FROM gifts WHERE giver = 'Santa' OR price is > 30;
 
 --
 \echo Query for every gift whose giver is NOT Santa
 --
 
-SELECT * FROM gifts WHERE giver != `Santa` ;
+SELECT * FROM gifts WHERE giver != 'Santa';
 --
 \echo Update the second gift to have a value of 2999
 -- 
