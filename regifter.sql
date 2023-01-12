@@ -82,7 +82,7 @@ SELECT * FROM gifts WHERE giver = 'Santa' OR price > 30;
 \echo Query for every gift whose giver is NOT Santa
 --
 
-SELECT * FROM gifts WHERE giver  is != 'Santa';
+SELECT * FROM gift WHERE giver is != 'Santa';
 --
 \echo Update the second gift to have a value of 2999
 -- 
@@ -110,7 +110,7 @@ SELECT * FROM gifts;
 --
  \echo Count the total number of gifts that have the word candle in it
 -- 
-SELECT COUNT(*)FROM gifts WHERE LIKE '%candle%';
+SELECT (*)COUNT FROM gifts WHERE LIKE '%candle%';
 
 --
 \echo Get the AVEREAGE value from all the gifts
