@@ -61,7 +61,7 @@ VALUES
   ('watch', 'Michele', 29, FALSE),
   ('candle', 'Phenicia', 34, FALSE),
   ('Nike', 'Shaldar', 32, TRUE),
-  ('timberlands', 'Flinnetta', 39, FALSE)
+  ('timberlands', 'Flinnetta', 39, FALSE),
   ('rashberry pi', 'Zoe', 12, TRUE);
 
 --
