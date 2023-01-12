@@ -21,7 +21,9 @@ CREATE TABLE gifts (id serial, gift TEXT, giver VARCHAR(30), value int, previous
 -- 
 \echo See details of the table you created
 -- 
-SELECT * FROM gifts;
+
+\d gifts;
+-- SELECT * FROM gifts;
 
 -- 
 \echo Alter the table so that the column price is changed to value 
