@@ -82,7 +82,7 @@ SELECT * FROM gifts WHERE giver = 'Santa' OR price > 30;
 \echo Query for every gift whose giver is NOT Santa
 --
 
-SELECT * FROM gifts WHERE giver != 'Santa';
+SELECT * FROM gifts WHERE giver  is != 'Santa';
 --
 \echo Update the second gift to have a value of 2999
 -- 
@@ -97,7 +97,7 @@ SELECT * FROM gifts WHERE id = 2;
 --
 \echo Delete all the gifts from Santa and return the 'value' and 'gift' of the gift you have deleted
 --
-DELETE FROM gifts WHERE giver = Santa RETURNING price, gift;
+DELETE FROM gifts WHERE giver = 'Santa' RETURNING price, gift;
 
 --
 \echo Query for all the columns in your gifts table one more time
