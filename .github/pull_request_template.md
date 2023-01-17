@@ -2,7 +2,7 @@
 
 ## Completion 1 -5
 
-My self-assessed completion score is \_\_\_\_
+My self-assessed completion score is 4
 
 5: I did everything required and attempted at least one bonus
 
@@ -16,7 +16,7 @@ My self-assessed completion score is \_\_\_\_
 
 ## Comfort 1- 5
 
-My self-assessed comfort score is \_\_\_\_
+My self-assessed comfort score is 4
 
 5: This assignment was a breeze! I want more challenges
 
@@ -31,10 +31,13 @@ My self-assessed comfort score is \_\_\_\_
 ## Wins
 
 Please list any wins:
+looking over notes and youtube to complete this lab.
 
 ## Struggles
 
 Please list any specific struggles
+
+i was extremely sick the week of this lab even tho its turned in late, still took the time to get it done.
 
 ## Other comments
 
